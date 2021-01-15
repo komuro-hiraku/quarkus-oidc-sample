@@ -27,5 +27,5 @@ jobs:
         with:
           java-version: 11
       - name: Build with Magen
-        run: mvn --batch-mode --update-shapshots verify
+        run: mvn --batch-mode --update-snapshots verify
         
