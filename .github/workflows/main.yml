@@ -27,5 +27,9 @@ jobs:
         with:
           java-version: 11
       - name: Build with Magen
+        env:
+          AUTH_SERVER_URL: ${{ secrets.AUTH_SERVER_URL }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: mvn --batch-mode --update-snapshots verify
         
