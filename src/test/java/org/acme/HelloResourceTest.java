@@ -10,7 +10,6 @@ import java.net.URL;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.is;
 
 @QuarkusTest
 public class HelloResourceTest {
